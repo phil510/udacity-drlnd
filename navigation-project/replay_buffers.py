@@ -53,7 +53,7 @@ class ReplayBuffer():
 class PrioritizedReplayBuffer(ReplayBuffer):
     def __init__(self, memory_size = 1000000, alpha = 0.5, seed = None):
         '''
-        Prioritized replay buffer from from https://arxiv.org/pdf/1511.05952.pdf
+        Prioritized replay buffer from https://arxiv.org/pdf/1511.05952.pdf
         This implementation is based on the openai sumtree implemenation 
         https://github.com/openai/baselines/blob/master/baselines/deepq/replay_buffer.py
         
