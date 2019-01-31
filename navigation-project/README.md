@@ -22,11 +22,11 @@ The task is episodic, and, in order to solve the environment, the agent must get
 
 ### Getting Started
 
-The project is contained in the Navigation.ipynb file. After installing the required packages (pytorch, unity ml-agents, etc.) clone the git repo and run the iPython notebook. All supporting files (dqn.py, replay_buffers.py, etc.) must be downloaded and imported in the ntoebook.
+The project is contained in the Report.ipynb notebook. After installing the required packages (pytorch, unity ml-agents, etc.) clone the git repo and run the iPython notebook. All supporting files (dqn.py, replay_buffers.py, etc.) must be downloaded and imported in the notebook.
 
 ### Conculsions and References
 
-Multiple agent designs were used to solve the envirnment, including a vanilla DQN, a double DQN agent, a dueling DQN agent, a prioritized DQN agent, and a rainbow DQN (name borrowed from the larger rainbow agent described in the paper below). While all agents were able to solve the environment efficiently, certain agents learned faster and the double and prioritized flavors seemed to provide the largest improvement over the vanilla DQN.
+Multiple agent designs were used to solve the envirnment, including a vanilla DQN, a double DQN agent, a dueling DQN agent, a prioritized DQN agent, and a rainbow DQN (name borrowed from the larger rainbow agent described in the paper below). The fastest learner was able to solve the environment in less than 400 episodes. While all agents were able to solve the environment efficiently, certain agents learned faster and the double and prioritized flavors seemed to provide the largest improvement over the vanilla DQN.
 
 The agents in for this project were based on the following papers:
 1. DQN: https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf
