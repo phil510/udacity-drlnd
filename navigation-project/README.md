@@ -34,3 +34,5 @@ The agents in for this project were based on the following papers:
 3. Dueling DQN: https://arxiv.org/abs/1511.06581
 4. DQN with Prioritized Experience Replay: https://arxiv.org/abs/1511.05952
 5. Rainbow DQN: https://arxiv.org/pdf/1710.02298
+
+The sum-tree implementation of prioritized experience replay uses the OpenAI baselines sum tree code, which can be found here: https://github.com/openai/baselines/blob/master/baselines/common/segment_tree.py and is included segment_tree.py in the git repo.
