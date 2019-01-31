@@ -54,7 +54,7 @@ class PrioritizedReplayBuffer(ReplayBuffer):
     def __init__(self, memory_size = 1000000, alpha = 0.5, seed = None):
         '''
         Prioritized replay buffer from https://arxiv.org/pdf/1511.05952.pdf
-        This implementation is based on the openai sumtree implemenation 
+        This implementation is based on the OpenAI sumtree implemenation which can be found here
         https://github.com/openai/baselines/blob/master/baselines/deepq/replay_buffer.py
         
         memory_size: int
@@ -95,6 +95,8 @@ class PrioritizedReplayBuffer(ReplayBuffer):
     def _sample_proportional(self, batch_size):
         '''
         Function to use sample from the replay buffer with proportional prioritization
+        All code here is from the OpenAI implementation to correctly make use of the
+        sum-tree data structure
         
         batch_size: int
             then number of experience to sample
@@ -152,7 +154,6 @@ class PrioritizedReplayBuffer(ReplayBuffer):
             list of new priorities corresponding to the given indices
         '''
         for i, priority in zip(indices, priorities):
-            assert priority > 0
             self._it_sum[i] = priority ** self.alpha
             self._it_min[i] = priority ** self.alpha
             self._max_priority = max(self._max_priority, priority)
