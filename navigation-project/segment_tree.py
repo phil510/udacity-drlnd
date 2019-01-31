@@ -1,4 +1,5 @@
-# from https://github.com/openai/baselines/blob/master/baselines/common/segment_tree.py
+# OpenAI baseline implementation of segment-trees, including sum-tree. The code can be
+# found here https://github.com/openai/baselines/blob/master/baselines/common/segment_tree.py
 
 import operator
 
