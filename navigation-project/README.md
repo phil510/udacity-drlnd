@@ -31,7 +31,7 @@ Download the environment from one of the links below.  You need only select the 
 - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
 Unzip and place the environment in the same directory as the iPython notebook.
 
-### Conculsions and References
+### Conclusions and References
 
 Multiple agent designs were used to solve the envirnment, including a vanilla DQN, a double DQN agent, a dueling DQN agent, a prioritized DQN agent, and a rainbow DQN (name borrowed from the larger rainbow agent described in the paper below). The fastest learner was able to solve the environment in less than 400 episodes. While all agents were able to solve the environment efficiently, certain agents learned faster and the double and prioritized flavors seemed to provide the largest improvement over the vanilla DQN.
 
