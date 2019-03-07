@@ -35,7 +35,7 @@ Next, download the environment from one of the links below.  You need only selec
 - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip)
 Unzip and place the environment in the same directory as the iPython notebook.
 
-### Conculsions and References
+### Conclusions and References
 
 This environment was solved with a PPO agent. Like many environments, a significant amount of hyperparameter tuning was required to efficiently solve the environment within a reasonable time frame. Small, separate deep neural networks were used for value estimation and policy estimation - no shared layers were utilized. Consistent with the original PPO paper (reference below), a truncated version of generalized advantage estimation (GAE) was used. However, the advantage function used by A3C, which is equivalent to GAE with lambda equal to 1.0, was also tried during hyperparameter tuning with some success. 
 
