@@ -24,6 +24,13 @@ The task is episodic, and, in order to solve the environment, the agent must get
 
 The project is contained in the Report.ipynb notebook. After installing the required packages (pytorch, unity ml-agents, etc.) clone the git repo and run the iPython notebook. All supporting files (dqn.py, replay_buffers.py, etc.) must be downloaded and imported in the notebook.
 
+Download the environment from one of the links below.  You need only select the environment that matches your operating system:
+- Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
+- Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
+- Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
+- Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
+Unzip and place the environment in the same directory as the iPython notebook.
+
 ### Conculsions and References
 
 Multiple agent designs were used to solve the envirnment, including a vanilla DQN, a double DQN agent, a dueling DQN agent, a prioritized DQN agent, and a rainbow DQN (name borrowed from the larger rainbow agent described in the paper below). The fastest learner was able to solve the environment in less than 400 episodes. While all agents were able to solve the environment efficiently, certain agents learned faster and the double and prioritized flavors seemed to provide the largest improvement over the vanilla DQN.
