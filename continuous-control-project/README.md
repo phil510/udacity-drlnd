@@ -38,7 +38,7 @@ Unzip and place the contents in the same directory as the iPython notebook.
 
 ### Conclusions and References
 
-This environment was solved with a PPO agent. Like many environments, a significant amount of hyperparameter tuning was required to efficiently solve the environment within a reasonable time frame. Small, separate deep neural networks were used for value estimation and policy estimation - no shared layers were utilized. Consistent with the original PPO paper (reference below), a truncated version of generalized advantage estimation (GAE) was used. However, the advantage function used by A3C, which is equivalent to GAE with lambda equal to 1.0, was also tried during hyperparameter tuning with some success. 
+This environment was solved with a PPO agent. Like many environments, a significant amount of hyperparameter tuning was required to efficiently solve the environment within a reasonable time frame. Separate deep neural networks were used for value estimation and policy estimation - no shared layers were utilized. Consistent with the original PPO paper (reference below), a truncated version of generalized advantage estimation (GAE) was used. However, the advantage function used by A3C, which is equivalent to GAE with lambda equal to 1.0, was also tried during hyperparameter tuning with some success. 
 
 The agent in for this project was based on the following papers:
 1. PPO: https://arxiv.org/pdf/1707.06347.pdf
