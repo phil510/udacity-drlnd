@@ -36,7 +36,9 @@ Unzip and place the contents in the same directory as the iPython notebook.
 
 ### Conclusions and References
 
-This environment was solved using various versions of DDPG and MADDPG. First, two separate DDPG agents were used as a baseline. We then used MADDPG, a mult-agent variant of DDPG, to try improve the time it took to solve the environment. Unlike the separate DDPG agents, the MADDPG agents have a critics that have access to the other agents' actions and observations. This has been shown to improve both competitive and collaborative agents over separate agents that treat other agents as simply part of the environment. To try to further improve agents, lastly, we add a distributional critic to the MADDPG agents, which learns the entire state-action value distribution (instead of the mean state-action value) using quantile regression. These agents solved the environment faster than the first two variants, illustrating the importance of the critic in guiding training.
+This environment was solved using various versions of DDPG and MADDPG. First, two separate DDPG agents were used as a baseline. We then used MADDPG, a mult-agent variant of DDPG, to try improve the time it took to solve the environment. Unlike the separate DDPG agents, the MADDPG agents have critics that have access to the other agents' actions and observations. This has been shown to improve both competitive and collaborative agents over separate agents that treat other agents as simply part of the environment. 
+
+Lastly, to try to further improve agents, we add a distributional critic to the MADDPG agents, which learns the entire state-action value distribution (instead of the mean state-action value) using quantile regression. These agents solved the environment faster than the first two variants, illustrating the importance of the critic in guiding training.
 
 The agents in for this project were based on the following papers:
 1. DDPG: https://arxiv.org/pdf/1509.02971.pdf
