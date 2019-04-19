@@ -1,3 +1,3 @@
-# udacity-drlnd
-Udacity Deep Reinforcement Learning Nano-Degree Repo
+# Udacity Deep Reinforcement Learning Nano-Degree Program Projects Repo
+This repo contains my solutions to the Udacity Deep Reinforcement Learning Nano-Degree Program projects. I hope you find them interesting and useful!
 
